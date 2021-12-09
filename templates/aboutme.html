@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>About Me</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='aboutme.css') }}">
+{% endblock head %}
+
+{% block content %}
+    <div class="ab-container">
+        <h1>Kiet Diep</h1>
+        <h2>Python Developer</h2>
+        <div class="image">
+            <img src="../static/images/KD.png" alt="Kiet Selfie">
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin dui massa, ultricies sed, rhoncus ut, mattis at, risus.
+            Proin justo. Mauris arcu. Suspendisse wisi. Donec nulla augue, eleifend vitae, nonummy in, posuere a, ipsum.
+            Nulla nunc. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione eos nesciunt cumque enim, consequatur vero soluta reiciendis dignissimos? Eveniet ex officia delectus aspernatur, maxime illum asperiores quae libero quod assumenda? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur officiis similique exercitationem fugiat voluptatem atque modi sed. Deleniti ea, sint animi eveniet cum quo. Deserunt corporis nihil quidem distinctio inventore!Lorem
+        </p>
+    </div>
+
+{% endblock content %}

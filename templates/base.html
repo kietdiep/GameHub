@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+    {% block head %}{% endblock head %}
+  </head>
+  <body>
+    <div class="bg-container">
+      <nav>
+        <a href="{{url_for('index')}}"><img class="logo" src="../static/images/KD.png" alt="logo"></a>
+        <ul>
+          <li><a href="{{url_for('about')}}">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Portfolio</a></li>
+        </ul>
+      </nav>
+      {% block content %}{% endblock content %}
+      <div class="social-icons">
+        <a href="https://github.com/kietdiep"><img src="../static/images/github.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/kietdiep/"><img src="../static/images/linkedin.png" alt=""></a>
+        <a href=""><img src="../static/images/instagram.png" alt=""></a>
+      </div>
+    </div>
+    
+    
+   
+   
+  </body>
+</html>
