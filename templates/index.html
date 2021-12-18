@@ -3,16 +3,16 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
 {% endblock head %}
 
-{% block content %}
+{% block primary %}
     <div class="text-box">
         <h1>Kiet Diep</h1>
         <h3>New Grad Python Developer</h3>
     
         <div class="row-button">
-            <a href="">Explore My Portfolio</a>
-            <a href="">Contact Me <span>&#x27F6;</span></a>
+            <a href="{{url_for('portfolio')}}">Explore My Portfolio</a>
+            <a href="{{url_for('contact')}}">Contact Me <span>&#x27F6;</span></a>
             <span>Click the About Tab to learn all about my passions and hobbies</span>
         </div>
     </div>
-{% endblock content %}
+{% endblock primary %}
     

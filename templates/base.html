@@ -14,18 +14,17 @@
         <a href="{{url_for('index')}}"><img class="logo" src="../static/images/KD.png" alt="logo"></a>
         <ul>
           <li><a href="{{url_for('about')}}">About</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Portfolio</a></li>
+          <li><a href="{{url_for('contact')}}">Contact</a></li>
+          <li><a href="{{url_for('portfolio')}}">Portfolio</a></li>
         </ul>
       </nav>
-      {% block content %}{% endblock content %}
+      {% block primary %}{% endblock primary %}
       <div class="social-icons">
         <a href="https://github.com/kietdiep"><img src="../static/images/github.png" alt=""></a>
         <a href="https://www.linkedin.com/in/kietdiep/"><img src="../static/images/linkedin.png" alt=""></a>
         <a href=""><img src="../static/images/instagram.png" alt=""></a>
       </div>
     </div>
-    
     
    
    

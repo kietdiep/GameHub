@@ -16,8 +16,6 @@
   background-size: cover;
   background-position: center;
   padding: 0 8%;
-  position: relative;
-  background-attachment: fixed;
 }
 
 nav {
@@ -33,11 +31,6 @@ nav {
   cursor: pointer;
   border-radius: 50%;
 }
-
-/* .cart-icon {
-  width: 30px;
-  cursor: pointer;
-} */
 
 nav ul {
   flex: 1;

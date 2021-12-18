@@ -1,0 +1,140 @@
+:root {
+  --clr-neutral-900: hsl(207, 19%, 9%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-accent-400: hsl(142, 90%, 61%);
+}
+
+.row {
+  display: flex;
+  height: 70%;
+  align-items: center;
+  line-height: 1.6;
+}
+
+h2 {
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+}
+
+.card-body {
+  color: rgb(255 255 255 / 0.85);
+}
+
+.card {
+  color: var(--clr-neutral-100);
+  width: 350px;
+  height: 450px;
+  display: inline-block;
+  border-radius: 0.5rem;
+  padding: 16rem 0 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 35px 35px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  transition: transform 500ms ease;
+  line-height: 1.7rem;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: scale(1.05);
+}
+
+.card-content {
+  --padding: 1.5rem;
+  padding: var(--padding);
+  background: linear-gradient(
+    hsl(0 0% 0% /0),
+    hsl(20 0% 0% /0.3) 10%,
+    hsl(0 0% 0% /1)
+  );
+  transform: translateY(65%);
+  transition: transform 500ms ease;
+}
+
+.card-content > *:not(.card-title) {
+  opacity: 0;
+  transition: opacity 500ms linear;
+}
+
+.card:hover .card-content,
+.card:focus-within .card-content {
+  transform: translateY(0);
+  transition-delay: 500ms;
+}
+
+.card:focus-within .card-content {
+  transition-duration: 0ms;
+}
+
+.card:hover .card-content > *:not(.card-title),
+.card:focus-within .card-content > *:not(.card-title) {
+  opacity: 1;
+  transition-delay: 1000ms;
+}
+
+.card:hover .card-title::after,
+.card:focus-within .card-title::after {
+  transform: scaleX(1);
+}
+
+.card-title {
+  position: relative;
+  width: max-content;
+  /* max-width: 100%; if line is longer */
+}
+
+.card-title::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  left: calc(var(--padding) * -1);
+  bottom: -2px;
+  width: calc(100% + var(--padding));
+  background: white;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 500ms ease;
+}
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr-neutral-900);
+  background-color: var(--clr-accent-400);
+  padding: 0.5em 1.25em;
+  border-radius: 0.25em;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--clr-neutral-100);
+}
+
+.card1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+    url("./images/scraper.jpg");
+}
+
+.card2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+    url("./images/vsa.jpg");
+}
+
+.card3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+    url("./images/japan2.jpg");
+}
+
+.card4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+    url("./images/japan3.jpg");
+}
+
+.card p {
+  text-shadow: 0 0 15px #000;
+  font-size: 8px;
+}

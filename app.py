@@ -16,11 +16,11 @@ def about():
 
 @app.route('/contactinfo')
 def contact():
-    return render_template('')
+    return render_template('contactinfo.html')
 
 @app.route('/portfolio')
 def portfolio():
-    return render_template('')
+    return render_template('portfolio.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
