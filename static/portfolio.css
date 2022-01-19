@@ -16,6 +16,9 @@ h2 {
   text-shadow: 0 0 5px #999;
 }
 
+h5 {
+  font-size: 1em;
+}
 .card-body {
   color: rgb(255 255 255 / 0.85);
 }
@@ -121,17 +124,17 @@ h2 {
 
 .card2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
-    url("./images/vsa.jpg");
+    url("./images/Stock_app.JPG");
 }
 
 .card3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
-    url("./images/japan2.jpg");
+    url("./images/Nez.png");
 }
 
 .card4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
-    url("./images/japan3.jpg");
+    url("./images/Zen.png");
 }
 
 .card p {

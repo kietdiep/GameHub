@@ -7,12 +7,6 @@
 {% endblock head %}
 
 {% block primary %}
-    <!-- <div class="alert-success">
-        <span>Message Sent! Thank you for contacting me</span>
-    </div>
-    <div class="alert-error">
-        <span>Something went wrong! Please try again</span>
-    </div> -->
     <div class="contact-section">
         <div class="contact-info">
             <div><i class="fas fa-map-marker-alt"></i>Westminster, California, USA</div>
@@ -20,13 +14,14 @@
             <div><i class="fas fa-phone"></i>+714 363 6210</div>
             <div><i class="fas fa-clock"></i>Mon - Fri 8:00 AM to 5:00 PM</div>
         </div>
+        <form action="/form" method="POST">
         <div class="contact-form">
             <h2>Contact Me</h2>
             <form class="contact" action="" method="post"></form>
             <input type="text" name="name" class="text-box" placeholder="Your Name" required>
             <input type="email" name="email" class="text-box" placeholder="Your Email" required>
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <input type="submit" name="submit" class="send-btn" value="Send">
+            <a href="/form"><input type="submit" name="submit" class="send-btn" value="Send"></a>
         </div>
     </div>
 {% endblock primary %}

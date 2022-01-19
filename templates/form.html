@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Thank You!</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='form.css') }}">
+{% endblock head %}
+
+{% block primary %}
+    <div class="thank-you">
+        <h1>Thank you for reaching out!</h1>
+        <h2>I look forward to connecting with you {{ name }}</h2>
+    </div>
+{% endblock primary %}
